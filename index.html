@@ -30,23 +30,32 @@
     <a class="skip-link" href="#main-content">Lewati ke Konten Utama</a>
 
     <!-- Header -->
-    <header>
-        <div class="header-content">
-            <a href="/" class="logo">
-                <img src="logo-kota.png" alt="Logo Kota Contoh" width="40" height="40">
-                Pemkot Contoh
-            </a>
-            
-            <nav aria-label="Navigasi Utama">
-                <ul class="nav-menu">
-                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
-                    <li><a href="#layanan" class="nav-link">Layanan</a></li>
-                    <li><a href="#informasi" class="nav-link">Informasi</a></li>
-                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+   <!-- Header -->
+<header>
+    <div class="header-content">
+        <a href="/" class="logo">
+            <img src="logo-kota.png" alt="Logo Kota Contoh" width="40" height="40">
+            Pemkot Contoh
+        </a>
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger" aria-label="Toggle Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- Nav Menu -->
+        <nav class="nav-menu" aria-label="Navigasi Utama">
+            <ul>
+                <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                <li><a href="#informasi" class="nav-link">Informasi</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="hero" id="beranda" aria-labelledby="hero-heading">
