@@ -306,3 +306,13 @@ footer {
     transition: none !important;
   }
 }
+
+/* Shrink Effect pada Scroll */
+header.scrolled {
+  padding: 0.5rem 0;
+  background: rgba(0,74,153,0.95);
+}
+window.addEventListener('scroll', () => {
+  const scrolled = window.pageYOffset > 50;
+  navbar.classList.toggle('scrolled', scrolled);
+});
