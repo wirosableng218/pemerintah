@@ -1,7 +1,7 @@
 // Navbar Scroll Behavior
 let lastScroll = 0;
 const navbar = document.querySelector('header');
-const scrollThreshold = 5; // Minimal scroll pixels untuk trigger efek
+const scrollThreshold = 10; // Minimal scroll pixels untuk trigger efek
 
 // Toggle Hamburger Menu
 const hamburger = document.querySelector('.hamburger');
