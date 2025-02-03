@@ -1,73 +1,196 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pemerintahan</title>
+    <meta name="description" content="Portal Resmi Pemerintah Kota Contoh - Layanan Publik Terintegrasi">
+    <meta name="author" content="Dinas Komunikasi dan Informatika Kota Contoh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contoh.kota.go.id">
+    <meta property="og:title" content="Pemerintah Kota Contoh - Layanan Masyarakat Digital">
+    <meta property="og:description" content="Akses layanan publik, informasi pemerintahan, dan pengaduan masyarakat secara online">
+    <meta property="og:image" content="https://contoh.kota.go.id/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://contoh.kota.go.id">
+    <meta property="twitter:title" content="Pemerintah Kota Contoh - Layanan Masyarakat Digital">
+    <meta property="twitter:description" content="Akses layanan publik, informasi pemerintahan, dan pengaduan masyarakat secara online">
+    <meta property="twitter:image" content="https://contoh.kota.go.id/images/og-image.jpg">
+
+    <title>Pemerintah Kota Contoh - Layanan Publik Terintegrasi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Skip to Content -->
+    <a class="skip-link" href="#main-content">Lewati ke Konten Utama</a>
+
+    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>Pemerintah Kota Contoh</h1>
-            <nav>
-                <ul>
-                    <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#tentang">Tentang Kami</a></li>
-                    <li><a href="#layanan">Layanan</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <img src="logo-kota.png" alt="Logo Kota Contoh" width="40" height="40">
+                Pemkot Contoh
+            </a>
+            
+            <nav aria-label="Navigasi Utama">
+                <ul class="nav-menu">
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                    <li><a href="#informasi" class="nav-link">Informasi</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="beranda" class="hero">
-        <div class="container">
-            <h2>Selamat Datang di Website Resmi Pemerintah Kota Contoh</h2>
-            <p>Melayani masyarakat dengan integritas dan transparansi.</p>
+    <!-- Hero Section -->
+    <section class="hero" id="beranda" aria-labelledby="hero-heading">
+        <div class="hero-content">
+            <h1 id="hero-heading">Selamat Datang di Portal Digital Kota Contoh</h1>
+            <p>Mewujudkan Pelayanan Publik yang Cepat, Akurat, dan Terpercaya</p>
+            <a href="#layanan" class="btn btn-large">Akses Layanan <i class="fas fa-chevron-right"></i></a>
         </div>
     </section>
 
-    <section id="tentang" class="about">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>Pemerintah Kota Contoh berkomitmen untuk memberikan pelayanan terbaik kepada masyarakat dengan mengutamakan prinsip good governance.</p>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Layanan Unggulan -->
+        <section class="section" id="layanan" aria-labelledby="layanan-heading">
+            <div class="container">
+                <h2 class="section-title" id="layanan-heading">Layanan Publik</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <i class="fas fa-id-card icon-large"></i>
+                        <h3>Administrasi Kependudukan</h3>
+                        <p>Pengurusan KTP, KK, Akta Kelahiran, dan dokumen kependudukan lainnya</p>
+                        <a href="#" class="btn">Ajukan Online</a>
+                    </article>
 
-    <section id="layanan" class="services">
-        <div class="container">
-            <h2>Layanan Kami</h2>
-            <ul>
-                <li>Pelayanan Administrasi Kependudukan</li>
-                <li>Pelayanan Perizinan</li>
-                <li>Pengaduan Masyarakat</li>
-                <li>Informasi Publik</li>
-            </ul>
-        </div>
-    </section>
+                    <article class="service-card">
+                        <i class="fas fa-building-shield icon-large"></i>
+                        <h3>Perizinan Usaha</h3>
+                        <p>Perizinan UMKM, IMB, dan legalitas usaha lainnya</p>
+                        <a href="#" class="btn">Pelajari Syarat</a>
+                    </article>
 
-    <section id="kontak" class="contact">
-        <div class="container">
-            <h2>Kontak Kami</h2>
-            <form id="contactForm">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
+                    <article class="service-card">
+                        <i class="fas fa-comments-dollar icon-large"></i>
+                        <h3>Pengaduan Masyarakat</h3>
+                        <p>Sampaikan laporan dan pengaduan Anda secara online</p>
+                        <a href="#" class="btn">Buat Pengaduan</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <!-- Informasi Publik -->
+        <section class="section bg-light" id="informasi" aria-labelledby="informasi-heading">
+            <div class="container">
+                <h2 class="section-title" id="informasi-heading">Informasi Terkini</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="news1.jpg" alt="Peluncuran Sistem Layanan Digital" loading="lazy">
+                        <div class="news-content">
+                            <h3>Peluncuran Sistem Layanan Terpadu</h3>
+                            <time datetime="2023-08-15">15 Agustus 2023</time>
+                            <p>Pemerintah Kota meluncurkan sistem layanan digital terintegrasi untuk mempermudah akses masyarakat</p>
+                        </div>
+                    </article>
 
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" required></textarea>
+                    <article class="news-card">
+                        <img src="news2.jpg" alt="Rapat Koordinasi Pemkot" loading="lazy">
+                        <div class="news-content">
+                            <h3>Rapat Koordinasi Triwulan III</h3>
+                            <time datetime="2023-08-10">10 Agustus 2023</time>
+                            <p>Evaluasi kinerja pemerintah kota dan penyusunan program prioritas</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <button type="submit">Kirim</button>
-            </form>
-        </div>
-    </section>
+        <!-- Kontak -->
+        <section class="section" id="kontak" aria-labelledby="kontak-heading">
+            <div class="container">
+                <h2 class="section-title" id="kontak-heading">Hubungi Kami</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Kantor Pemkot Contoh</h4>
+                                <p>Jl. Pemuda No. 123<br>Kota Contoh, Provinsi Contoh</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Center</h4>
+                                <p>(021) 1234-5678<br>Senin-Jumat, 08:00 - 16:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <form class="contact-form" id="contactForm" aria-label="Formulir Kontak">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Pemerintah Kota Contoh. Semua hak dilindungi.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Pemerintah Kota Contoh berkomitmen untuk memberikan pelayanan publik yang transparan dan akuntabel.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <ul class="footer-links">
+                    <li><a href="#layanan">Layanan Publik</a></li>
+                    <li><a href="#informasi">Informasi Terkini</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#">PPID</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Media Sosial</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Pemerintah Kota Contoh. Hak Cipta Dilindungi.</p>
+            <p>Desain oleh Dinas Komunikasi dan Informatika</p>
         </div>
     </footer>
 
